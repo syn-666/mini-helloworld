@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name: 'CoderWhy',
+    age: '18',
+    students: [
+      {id:'1',name:'kobe',age:'18'},
+      {id:'2',name:'aobe',age:'18'},
+      {id:'3',name:'bobe',age:'18'},
+      {id:'4',name:'dobe',age:'18'},
+      {id:'5',name:'cobe',age:'18'}
+    ],
+    counter: 0,
+  },
 
+  handlerBtnClick(){
+    this.setData({
+      counter:this.data.counter+1,
+    })
+    
   },
 
   /**

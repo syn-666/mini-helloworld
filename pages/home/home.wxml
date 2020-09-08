@@ -1,2 +1,10 @@
-<!-- 01 -->
-<view>sd</view>
+<!-- 01 小程序的数据绑定: {{}}-->
+<view>hello {{name}}</view>
+<view>age: {{age}}</view>
+
+<!-- 02 列表展示 -->
+<view wx:for="{{students}}" wx:key="{{students.id}}">{{item.name}}</view>
+
+<!-- 03 事件监听 -->
+<view>当前计数:{{counter}}</view>
+<button size='mini' bindtap="handlerBtnClick">+</button>
